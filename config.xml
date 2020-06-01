@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
+<widget xmlns     = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "com.itvarsity.superheroapp"
+        version   = "1.0.3">
+
+    <name>Superhero App</name>
+
+    <description>
+        The Superhero App is the second app that you will learn how to build in the IT varsity Apptrepreneur course.
+    </description>
+
+    <author href="https://itvarsity.org" email="courses@itvarsity.org">
+        The IT varsity Team
+    </author>
+
+    <!-- Define the main entry-point to the application -->
+    <content src="index.html" />
+
+    <plugin name="cordova-plugin-splashscreen" source="npm" />
+
+    <!-- Customize your app and platform with the preference element. -->
+    <preference name="permissions"                value="none"/>
+
+    <preference name="DisallowOverscroll"         value="true" />
+    <preference name="orientation"                value="portrait" />
+
+    <preference name="SplashScreen"               value="screen"/>
+    <preference name="SplashScreenDelay"          value="3000" />
+    <preference name="show-splash-screen-spinner" value="false" />
+
+    <!-- Define app icon and splashscreen for each platform. -->
+    <platform name="android">
+
+    <!-- Icons -->
+    <icon   src="res/icon/android/ldpi.png"                                 density="ldpi" />
+    <icon   src="res/icon/android/mdpi.png"                                 density="mdpi" />
+    <icon   src="res/icon/android/hdpi.png"                                 density="hdpi" />
+    <icon   src="res/icon/android/xhdpi.png"                                density="xhdpi" />
+    <icon   src="res/icon/android/xxhdpi.png"                               density="xxhdpi" />
+    <icon   src="res/icon/android/xxxhdpi.png"                              density="xxxhdpi" />
+
+    <!-- Splashscreens -->
+    <splash src="splash.png" />
+    <splash src="res/screen/android/port-ldpi.png"                          qualifier="port-ldpi" />
+    <splash src="res/screen/android/port-mdpi.png"                          qualifier="port-mdpi" />
+    <splash src="res/screen/android/port-hdpi.png"                          qualifier="port-hdpi" />
+    <splash src="res/screen/android/port-xhdpi.png"                         qualifier="port-xhdpi" />
+    <splash src="res/screen/android/port-xxhdpi.png"                        qualifier="port-xxhdpi" />
+    <splash src="res/screen/android/port-xxxhdpi.png"                       qualifier="port-xxxhdpi" />
+
+    <!--splash src=""                                                       qualifier="land-ldpi" />
+    <splash src=""                                                          qualifier="land-mdpi" />
+    <splash src=""                                                          qualifier="land-hdpi" />
+    <splash src=""                                                          qualifier="land-xhdpi" />
+    <splash src=""                                                          qualifier="land-xxhdpi" />
+    <splash src=""                                                          qualifier="land-xxxhdpi" /-->
+    </platform>
+
+</widget>
